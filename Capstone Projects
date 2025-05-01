@@ -1,1 +1,104 @@
+## Capstone Projects: Bringing it All Together
 
+### CP.1 Single Page Application (SPA)
+**Objective:**
+- Build a fully functional SPA using React, Vue.js, or Angular.
+- Include features like routing, state management, and API integration.
+
+**Requirements:**
+- Use a public API (e.g., OpenWeather, GitHub, or News API).
+- Implement basic CRUD operations.
+- Ensure the application is responsive and accessible.
+
+**Prompt:**
+- "Create a weather forecast application that fetches data from the OpenWeather API and displays it with interactive charts."
+
+---
+
+### CP.2 Real-Time Chat Application
+**Objective:**
+- Build a real-time chat app using WebSockets or Socket.IO.
+- Include user authentication and persistent data storage.
+
+**Requirements:**
+- Implement a feature to create chat rooms.
+- Allow users to send text and emojis.
+- Display online/offline user status.
+
+**Prompt:**
+- "Develop a chat application where users can join specific chat rooms and send real-time messages."
+
+---
+
+### CP.3 E-Commerce Website
+**Objective:**
+- Develop a basic e-commerce platform.
+- Include features like product listing, shopping cart, and checkout.
+
+**Requirements:**
+- Use a database or mock server for product information.
+- Allow users to filter and search products.
+- Secure the checkout process with client-side validation.
+
+**Prompt:**
+- "Create an e-commerce website that allows users to browse and purchase products. Include a cart feature and a payment simulation."
+
+---
+
+### CP.4 Progressive Web App (PWA)
+**Objective:**
+- Build a PWA that works offline and is installable.
+- Use service workers and a web app manifest.
+
+**Requirements:**
+- Cache important assets for offline use.
+- Include a notification feature.
+- Ensure the app passes the Lighthouse PWA audit.
+
+**Prompt:**
+- "Develop a task management application that works offline and syncs with the server when reconnected."
+
+---
+
+### CP.5 Data Visualization Dashboard
+**Objective:**
+- Create a data visualization dashboard using libraries like Chart.js, D3.js, or Google Charts.
+- Display meaningful insights from a dataset.
+
+**Requirements:**
+- Include at least three types of charts (e.g., bar chart, line graph, pie chart).
+- Add interactivity like tooltips or filters.
+- Make the dashboard visually appealing and responsive.
+
+**Prompt:**
+- "Build a dashboard to visualize COVID-19 data, including cases, recoveries, and deaths, with options to filter by country and date."
+
+---
+
+### CP.6 Blockchain Explorer
+**Objective:**
+- Develop a blockchain explorer using JavaScript.
+- Interact with an existing blockchain (e.g., Ethereum or Bitcoin).
+
+**Requirements:**
+- Fetch and display block details like transaction count and hash.
+- Allow users to search for specific blocks or transactions.
+- Include a simple UI for navigation.
+
+**Prompt:**
+- "Create a blockchain explorer that displays the latest blocks and allows users to search for specific transactions."
+
+---
+
+### CP.7 Machine Learning Application
+**Objective:**
+- Build a machine learning-powered web application.
+- Use TensorFlow.js or Brain.js for model training and inference.
+
+**Requirements:**
+- Train a model to classify or predict based on user input.
+- Visualize the training process and results.
+- Optimize the application for performance.
+
+**Prompt:**
+- "Build an image recognition app that identifies objects in uploaded photos using a pre-trained TensorFlow.js model."
