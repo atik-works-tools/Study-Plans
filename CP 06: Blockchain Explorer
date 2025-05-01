@@ -1,0 +1,170 @@
+## Capstone Project 6: Blockchain Explorer
+
+**Objective**: Build a blockchain explorer to fetch and display block details and transactions.
+
+---
+
+### 1. JavaScript/TypeScript
+**Features**:
+- Fetch and display block details (e.g., transaction count, hash).
+- Search functionality for specific blocks or transactions.
+- Responsive user interface.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install `axios` for API requests: `npm install axios`.
+2. **Frontend**:
+   - Create an `index.html` with sections for search input and block details.
+   - Use JavaScript (or TypeScript) to fetch and display data from a blockchain API (e.g., Etherscan or BlockCypher).
+3. **Search Functionality**:
+   - Implement input fields for searching blocks or transactions.
+   - Fetch and display results dynamically.
+4. **Styling**:
+   - Use CSS for responsive design.
+5. **Testing**:
+   - Test API requests with valid and invalid inputs.
+6. **Deployment**:
+   - Deploy on Netlify or GitHub Pages.
+
+---
+
+### 2. Vue.js
+**Features**:
+- Block and transaction search with Vue components.
+- State management with Vuex.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Vue project: `vue create blockchain-explorer`.
+   - Install dependencies: `npm install axios vue-router vuex`.
+2. **Components**:
+   - `SearchBar.vue`: Input for block or transaction search.
+   - `BlockDetails.vue`: Display block details.
+   - `TransactionDetails.vue`: Show transaction details.
+3. **State Management**:
+   - Use Vuex for managing block and transaction data.
+4. **Routing**:
+   - Use `vue-router` for navigating between block and transaction views.
+5. **Styling**:
+   - Use TailwindCSS for responsive design.
+6. **Testing**:
+   - Test with mock data and API responses.
+7. **Deployment**:
+   - Deploy on Netlify.
+
+---
+
+### 3. Nuxt.js
+**Features**:
+- Server-side rendering for blockchain data.
+- Dynamic routes for blocks and transactions.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nuxt project: `npx create-nuxt-app blockchain-explorer`.
+   - Add dependencies: `npm install axios`.
+2. **Pages**:
+   - `index.vue`: Search bar and results.
+   - `block/[id].vue`: Display block details.
+   - `transaction/[id].vue`: Display transaction details.
+3. **Data Fetching**:
+   - Use Nuxt’s `asyncData` for server-side fetching.
+4. **State Management**:
+   - Use Vuex for managing state.
+5. **Styling**:
+   - Use SCSS or TailwindCSS.
+6. **Testing**:
+   - Test SSR and API requests.
+7. **Deployment**:
+   - Deploy on Vercel.
+
+---
+
+### 4. React.js
+**Features**:
+- Modular components for search and details.
+- Dynamic fetching and display of blockchain data.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a React project: `npx create-react-app blockchain-explorer`.
+   - Install dependencies: `npm install axios react-router-dom`.
+2. **Components**:
+   - `SearchBar.js`: Input for block or transaction search.
+   - `BlockDetails.js`: Display block details.
+   - `TransactionDetails.js`: Show transaction details.
+3. **State Management**:
+   - Use Context API or Redux for managing data.
+4. **Routing**:
+   - Use `react-router-dom` for navigation.
+5. **Styling**:
+   - Use Styled-Components or CSS Modules.
+6. **Testing**:
+   - Test with mock APIs and edge cases.
+7. **Deployment**:
+   - Deploy on Netlify.
+
+---
+
+### 5. Next.js
+**Features**:
+- Server-side rendering for blockchain data.
+- Dynamic routing for blocks and transactions.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Next.js project: `npx create-next-app blockchain-explorer`.
+   - Install dependencies: `npm install axios`.
+2. **Pages**:
+   - `index.js`: Search bar and results.
+   - `block/[id].js`: Display block details.
+   - `transaction/[id].js`: Display transaction details.
+3. **Data Fetching**:
+   - Use `getServerSideProps` for server-side fetching.
+4. **State Management**:
+   - Use Context API or Redux for managing state.
+5. **Styling**:
+   - Use CSS Modules or SCSS.
+6. **Testing**:
+   - Test SSR and API requests.
+7. **Deployment**:
+   - Deploy on Vercel.
+
+---
+
+### 6. Node.js
+**Features**:
+- Backend API to fetch block and transaction data.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install dependencies: `npm install express axios`.
+2. **API Endpoints**:
+   - `/block/:id`: Fetch block details.
+   - `/transaction/:id`: Fetch transaction details.
+3. **Server**:
+   - Set up an Express server to handle API requests.
+4. **Testing**:
+   - Test endpoints with Postman or Insomnia.
+5. **Deployment**:
+   - Deploy on Heroku or Render.
+
+---
+
+### 7. Nest.js
+**Features**:
+- Modular backend with RESTful API.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nest.js project: `nest new blockchain-explorer`.
+   - Install dependencies: `npm install axios`.
+2. **Modules & Controllers**:
+   - Create `BlockModule` and `TransactionModule`.
+   - Implement endpoints for blocks and transactions.
+3. **Testing**:
+   - Write unit tests for modules and controllers.
+4. **Deployment**:
+   - Deploy on AWS or Heroku.
