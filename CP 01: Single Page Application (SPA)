@@ -1,138 +1,159 @@
 ## Capstone Project 1: Single Page Application (SPA)
 
-**Objective**: Build a fully functional SPA using different tech stacks.
+**Objective**: Build a weather forecast application with dynamic features.
 
 ---
 
 ### 1. JavaScript/TypeScript
 **Features**:
-- A weather forecast application that fetches data from the OpenWeather API.
-- Features: Current weather, 5-day forecast, search by city, and a responsive design.
+- Current weather and 5-day forecast.
+- Search by city.
+- Responsive design.
 
 **Step-by-Step Guide**:
-1. **Setup**:
-   - Install a code editor like VS Code.
-   - Initialize a new project using `npm init`.
-   - Install dependencies: `axios` for API requests.
-   
-2. **Create Basic Structure**:
-   - Set up an `index.html` with a `<div id="app"></div>` for the app container.
-   - Create `app.js` (or `app.ts` for TypeScript) for logic.
-
-3. **Implement Features**:
-   - Fetch weather data using the OpenWeather API.
-   - Display data dynamically using DOM manipulation.
-   - Add event listeners for user input (e.g., a search bar for city input).
-
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install dependencies: `npm install axios`.
+2. **HTML Structure**:
+   - Create an `index.html` with a `<div id="app"></div>` for the app container.
+3. **JavaScript Logic**:
+   - Fetch data from OpenWeather API using Axios.
+   - Append results dynamically to the DOM.
 4. **Styling**:
-   - Use CSS to make the app responsive.
-   - Add a mobile-friendly layout.
-
-5. **Testing**:
-   - Test with different cities.
-   - Handle edge cases like invalid city names or API errors.
-
-6. **Deployment**:
-   - Use a platform like Netlify or Vercel to host the application.
+   - Use CSS for responsive design.
+5. **Error Handling**:
+   - Handle invalid city names and API errors.
+6. **Testing**:
+   - Test with multiple cities.
+7. **Deployment**:
+   - Deploy on Netlify or GitHub Pages.
 
 ---
 
-### 2. Vue.js/Nuxt.js
+### 2. Vue.js
 **Features**:
-- A weather forecast application with Vue.js (or Nuxt.js for SSR).
-- Features: State management with Vuex, dynamic routing, and API integration.
+- State management with Vuex.
+- Dynamic routing.
 
 **Step-by-Step Guide**:
-1. **Setup**:
+1. **Project Setup**:
    - Install Vue CLI: `npm install -g @vue/cli`.
-   - Create a new Vue project: `vue create weather-app`.
-   - Install `vue-router` for routing and `axios` for API calls.
-
-2. **Create Components**:
-   - `Home.vue`: Display a search bar and weather details.
-   - `Forecast.vue`: Show a 5-day weather forecast.
-
+   - Create a project: `vue create weather-app`.
+   - Add dependencies: `npm install axios vue-router vuex`.
+2. **Components**:
+   - Create `Home.vue` for current weather.
+   - Create `Forecast.vue` for 5-day forecast.
 3. **State Management**:
-   - Set up Vuex for global state management.
-   - Store API responses and search input in the Vuex store.
-
+   - Use Vuex to store weather data globally.
 4. **Routing**:
-   - Configure dynamic routes for cities.
-   - Use `vue-router` to navigate between pages.
-
-5. **Styling**:
-   - Use CSS or a library like TailwindCSS for responsive design.
-
-6. **Testing**:
-   - Test navigation and data fetching.
-   - Handle API errors gracefully.
-
-7. **Deployment**:
-   - Deploy to Netlify or Vercel.
+   - Configure `vue-router` for navigation.
+5. **Styling & Testing**:
+   - Add TailwindCSS for styling.
+   - Test navigation and API calls.
+6. **Deployment**:
+   - Deploy on Netlify.
 
 ---
 
-### 3. React.js/Next.js
+### 3. Nuxt.js
 **Features**:
-- A weather forecast application using React.js or Next.js.
-- Features: Context API for state management, server-side rendering (SSR) with Next.js.
+- Server-side rendering (SSR).
+- Dynamic API calls.
 
 **Step-by-Step Guide**:
-1. **Setup**:
-   - Install React: `npx create-react-app weather-app`.
-   - For Next.js, use: `npx create-next-app weather-app`.
-
-2. **Create Components**:
-   - `Home`: Search bar and current weather.
-   - `Forecast`: Display 5-day forecast.
-
-3. **State Management**:
-   - Use React Context API or Redux for global state.
-   - Store API responses in the global state.
-
-4. **Routing**:
-   - For React, use `react-router-dom` to create routes.
-   - For Next.js, leverage file-based routing.
-
-5. **Styling**:
-   - Use CSS Modules or libraries like Styled-Components.
-
-6. **Testing**:
-   - Test components with React Testing Library.
-   - Check API requests and UI rendering.
-
-7. **Deployment**:
-   - Deploy on Vercel for Next.js or Netlify for React.js.
+1. **Project Setup**:
+   - Create a Nuxt project: `npx create-nuxt-app weather-app`.
+   - Add dependencies: `npm install axios`.
+2. **Pages**:
+   - Create `index.vue` for current weather.
+   - Create `forecast.vue` for 5-day forecast.
+3. **Data Fetching**:
+   - Use Nuxt’s `asyncData` for SSR.
+4. **Styling & Testing**:
+   - Use SCSS or TailwindCSS.
+   - Test SSR and API responses.
+5. **Deployment**:
+   - Deploy on Vercel.
 
 ---
 
-### 4. Node.js/Nest.js
+### 4. React.js
 **Features**:
-- A backend for the weather application.
-- Features: RESTful API, fetch data from OpenWeather, and serve it to the frontend.
+- Context API for state management.
+- Dynamic components.
 
 **Step-by-Step Guide**:
-1. **Setup**:
-   - Install Node.js and initialize a project: `npm init`.
-   - Install Express.js: `npm install express`.
+1. **Project Setup**:
+   - Create a project: `npx create-react-app weather-app`.
+   - Add dependencies: `npm install axios react-router-dom`.
+2. **Components**:
+   - Create `Home.js` for current weather.
+   - Create `Forecast.js` for 5-day forecast.
+3. **State Management**:
+   - Use Context API for global state.
+4. **Routing**:
+   - Use `react-router-dom` for navigation.
+5. **Styling & Testing**:
+   - Use Styled-Components.
+   - Test navigation and API integration.
+6. **Deployment**:
+   - Deploy on Netlify.
 
-2. **Create Endpoints**:
-   - `/current-weather`: Fetch current weather for a city.
-   - `/forecast`: Fetch 5-day forecast.
+---
 
-3. **Fetch Data**:
-   - Use `axios` or `node-fetch` to call the OpenWeather API.
+### 5. Next.js
+**Features**:
+- Server-side rendering (SSR) for API calls.
 
-4. **Error Handling**:
-   - Add error handling for invalid city names and API errors.
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a project: `npx create-next-app weather-app`.
+   - Add dependencies: `npm install axios`.
+2. **Pages**:
+   - Create `index.js` for current weather.
+   - Create `forecast.js` for 5-day forecast.
+3. **Data Fetching**:
+   - Use `getServerSideProps` for SSR.
+4. **Styling & Testing**:
+   - Use CSS Modules.
+   - Test SSR and API requests.
+5. **Deployment**:
+   - Deploy on Vercel.
 
-5. **Testing**:
-   - Test endpoints with Postman or Insomnia.
-   - Write unit tests for API routes.
+---
 
-6. **Nest.js Specific**:
-   - Set up a new project: `nest new weather-app`.
-   - Use the module system for organizing controllers and services.
+### 6. Node.js
+**Features**:
+- Create a REST API backend.
 
-7. **Deployment**:
-   - Deploy on platforms like Heroku or AWS.
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install dependencies: `npm install express axios`.
+2. **Endpoints**:
+   - Create `/current-weather` to fetch current weather.
+   - Create `/forecast` for 5-day forecast.
+3. **Server**:
+   - Set up an Express server.
+4. **Testing**:
+   - Test endpoints using Postman.
+5. **Deployment**:
+   - Deploy on Heroku.
+
+---
+
+### 7. Nest.js
+**Features**:
+- Modular architecture for backend.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nest.js project: `nest new weather-app`.
+   - Add dependencies: `npm install axios`.
+2. **Modules & Controllers**:
+   - Create `WeatherModule` with controllers and services.
+   - Implement `/current-weather` and `/forecast` endpoints.
+3. **Testing**:
+   - Write unit tests for services and controllers.
+4. **Deployment**:
+   - Deploy on AWS or Heroku.
