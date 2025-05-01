@@ -1,0 +1,138 @@
+## Capstone Project 1: Single Page Application (SPA)
+
+**Objective**: Build a fully functional SPA using different tech stacks.
+
+---
+
+### 1. JavaScript/TypeScript
+**Features**:
+- A weather forecast application that fetches data from the OpenWeather API.
+- Features: Current weather, 5-day forecast, search by city, and a responsive design.
+
+**Step-by-Step Guide**:
+1. **Setup**:
+   - Install a code editor like VS Code.
+   - Initialize a new project using `npm init`.
+   - Install dependencies: `axios` for API requests.
+   
+2. **Create Basic Structure**:
+   - Set up an `index.html` with a `<div id="app"></div>` for the app container.
+   - Create `app.js` (or `app.ts` for TypeScript) for logic.
+
+3. **Implement Features**:
+   - Fetch weather data using the OpenWeather API.
+   - Display data dynamically using DOM manipulation.
+   - Add event listeners for user input (e.g., a search bar for city input).
+
+4. **Styling**:
+   - Use CSS to make the app responsive.
+   - Add a mobile-friendly layout.
+
+5. **Testing**:
+   - Test with different cities.
+   - Handle edge cases like invalid city names or API errors.
+
+6. **Deployment**:
+   - Use a platform like Netlify or Vercel to host the application.
+
+---
+
+### 2. Vue.js/Nuxt.js
+**Features**:
+- A weather forecast application with Vue.js (or Nuxt.js for SSR).
+- Features: State management with Vuex, dynamic routing, and API integration.
+
+**Step-by-Step Guide**:
+1. **Setup**:
+   - Install Vue CLI: `npm install -g @vue/cli`.
+   - Create a new Vue project: `vue create weather-app`.
+   - Install `vue-router` for routing and `axios` for API calls.
+
+2. **Create Components**:
+   - `Home.vue`: Display a search bar and weather details.
+   - `Forecast.vue`: Show a 5-day weather forecast.
+
+3. **State Management**:
+   - Set up Vuex for global state management.
+   - Store API responses and search input in the Vuex store.
+
+4. **Routing**:
+   - Configure dynamic routes for cities.
+   - Use `vue-router` to navigate between pages.
+
+5. **Styling**:
+   - Use CSS or a library like TailwindCSS for responsive design.
+
+6. **Testing**:
+   - Test navigation and data fetching.
+   - Handle API errors gracefully.
+
+7. **Deployment**:
+   - Deploy to Netlify or Vercel.
+
+---
+
+### 3. React.js/Next.js
+**Features**:
+- A weather forecast application using React.js or Next.js.
+- Features: Context API for state management, server-side rendering (SSR) with Next.js.
+
+**Step-by-Step Guide**:
+1. **Setup**:
+   - Install React: `npx create-react-app weather-app`.
+   - For Next.js, use: `npx create-next-app weather-app`.
+
+2. **Create Components**:
+   - `Home`: Search bar and current weather.
+   - `Forecast`: Display 5-day forecast.
+
+3. **State Management**:
+   - Use React Context API or Redux for global state.
+   - Store API responses in the global state.
+
+4. **Routing**:
+   - For React, use `react-router-dom` to create routes.
+   - For Next.js, leverage file-based routing.
+
+5. **Styling**:
+   - Use CSS Modules or libraries like Styled-Components.
+
+6. **Testing**:
+   - Test components with React Testing Library.
+   - Check API requests and UI rendering.
+
+7. **Deployment**:
+   - Deploy on Vercel for Next.js or Netlify for React.js.
+
+---
+
+### 4. Node.js/Nest.js
+**Features**:
+- A backend for the weather application.
+- Features: RESTful API, fetch data from OpenWeather, and serve it to the frontend.
+
+**Step-by-Step Guide**:
+1. **Setup**:
+   - Install Node.js and initialize a project: `npm init`.
+   - Install Express.js: `npm install express`.
+
+2. **Create Endpoints**:
+   - `/current-weather`: Fetch current weather for a city.
+   - `/forecast`: Fetch 5-day forecast.
+
+3. **Fetch Data**:
+   - Use `axios` or `node-fetch` to call the OpenWeather API.
+
+4. **Error Handling**:
+   - Add error handling for invalid city names and API errors.
+
+5. **Testing**:
+   - Test endpoints with Postman or Insomnia.
+   - Write unit tests for API routes.
+
+6. **Nest.js Specific**:
+   - Set up a new project: `nest new weather-app`.
+   - Use the module system for organizing controllers and services.
+
+7. **Deployment**:
+   - Deploy on platforms like Heroku or AWS.
