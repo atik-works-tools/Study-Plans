@@ -1,1 +1,151 @@
+## Capstone Project 2: Real-Time Chat Application
 
+**Objective**: Build a real-time chat application using different tech stacks.
+
+---
+
+### 1. JavaScript/TypeScript
+**Features**:
+- Real-time messaging using WebSocket.
+- Multiple chat rooms.
+- Display online/offline user status.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install WebSocket library: `npm install ws`.
+2. **Backend**:
+   - Create a WebSocket server to manage chat rooms.
+   - Handle client connections and broadcast messages.
+3. **Frontend**:
+   - Create an HTML page with input fields for messages.
+   - Use a WebSocket client to send and receive messages.
+4. **Testing**:
+   - Test with multiple clients in different rooms.
+5. **Deployment**:
+   - Deploy on Node.js hosting services like Heroku or Render.
+
+---
+
+### 2. Vue.js
+**Features**:
+- Real-time chat with Vue components.
+- State management for user presence.
+- Dynamic routing for chat rooms.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Vue project: `vue create chat-app`.
+   - Install WebSocket libraries: `npm install vue-native-websocket`.
+2. **Components**:
+   - `ChatRoom.vue`: Display messages and input field.
+   - `UserList.vue`: Show online/offline users.
+3. **State Management**:
+   - Use Vuex to manage chat room and user data.
+4. **Routing**:
+   - Use `vue-router` for dynamic room navigation.
+5. **Styling**:
+   - Use TailwindCSS for responsive design.
+6. **Deployment**:
+   - Deploy on Netlify.
+
+---
+
+### 3. Nuxt.js
+**Features**:
+- Server-side messaging with WebSocket.
+- Dynamic user presence updates.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Install Nuxt: `npx create-nuxt-app chat-app`.
+   - Add dependencies: `npm install ws`.
+2. **Backend**:
+   - Create a WebSocket server in Nuxt’s server middleware.
+   - Handle chat room creation and message broadcasting.
+3. **Pages**:
+   - `index.vue`: Login and room list.
+   - `room.vue`: Chat interface.
+4. **State Management**:
+   - Use Vuex for managing messages and users.
+5. **Deployment**:
+   - Deploy on Vercel for server and client.
+
+---
+
+### 4. React.js
+**Features**:
+- React components for chat rooms and messages.
+- Context API for user and chat data.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a React project: `npx create-react-app chat-app`.
+   - Install WebSocket library: `npm install ws`.
+2. **Components**:
+   - `ChatRoom.js`: Display messages and input field.
+   - `UserList.js`: Show online/offline users.
+3. **State Management**:
+   - Use Context API for managing app state.
+4. **Styling**:
+   - Use Styled-Components or CSS Modules.
+5. **Deployment**:
+   - Deploy on Netlify.
+
+---
+
+### 5. Next.js
+**Features**:
+- Server-side WebSocket integration.
+- Dynamic routing for chat rooms.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Next.js project: `npx create-next-app chat-app`.
+   - Install WebSocket library: `npm install ws`.
+2. **Backend**:
+   - Create a WebSocket server with API routes.
+   - Handle messaging and user presence.
+3. **Pages**:
+   - `index.js`: Login and room list.
+   - `room/[id].js`: Chat interface.
+4. **State Management**:
+   - Use Context API or Redux for managing state.
+5. **Deployment**:
+   - Deploy on Vercel.
+
+---
+
+### 6. Node.js
+**Features**:
+- Backend WebSocket server for real-time messaging.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install WebSocket library: `npm install ws`.
+2. **Server**:
+   - Create a WebSocket server to manage chat rooms.
+   - Broadcast messages to users in a room.
+3. **Error Handling**:
+   - Handle user disconnection and reconnection.
+4. **Deployment**:
+   - Deploy on Heroku or Render.
+
+---
+
+### 7. Nest.js
+**Features**:
+- Modular WebSocket backend with Nest.js.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nest.js project: `nest new chat-app`.
+   - Install WebSocket module: `npm install @nestjs/websockets`.
+2. **Modules & Controllers**:
+   - Create `ChatModule` with controllers and services.
+   - Use WebSocket Gateway for handling messages.
+3. **Error Handling**:
+   - Handle connection and disconnection events.
+4. **Deployment**:
+   - Deploy on AWS or Heroku.
