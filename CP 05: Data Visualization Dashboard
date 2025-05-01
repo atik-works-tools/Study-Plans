@@ -1,0 +1,162 @@
+## Capstone Project 5: Data Visualization Dashboard
+
+**Objective**: Build a dashboard to visualize data using charts and graphs.
+
+---
+
+### 1. JavaScript/TypeScript
+**Features**:
+- Display bar chart, line graph, and pie chart.
+- Fetch data from an API or use a sample dataset.
+- Add interactivity like tooltips and filters.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install Chart.js: `npm install chart.js`.
+2. **Frontend**:
+   - Create an HTML template with canvas elements for charts.
+   - Use JavaScript (or TypeScript) to fetch data and populate charts.
+3. **Charts**:
+   - Use Chart.js to create different types of charts.
+   - Add tooltips and filters for interactivity.
+4. **Styling**:
+   - Use CSS for responsive design.
+5. **Testing**:
+   - Test with various datasets.
+6. **Deployment**:
+   - Deploy on Netlify or GitHub Pages.
+
+---
+
+### 2. Vue.js
+**Features**:
+- Data visualization using Vue components.
+- Interactive and responsive charts.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Vue project: `vue create data-dashboard`.
+   - Install Chart.js and Vue Chart.js: `npm install chart.js vue-chartjs`.
+2. **Components**:
+   - `BarChart.vue`: Display bar chart.
+   - `LineGraph.vue`: Display line graph.
+   - `PieChart.vue`: Display pie chart.
+3. **Data Fetching**:
+   - Fetch data from an API and pass it to the components.
+4. **Styling**:
+   - Use TailwindCSS for responsive design.
+5. **Testing**:
+   - Test with different datasets.
+6. **Deployment**:
+   - Deploy on Netlify.
+
+---
+
+### 3. Nuxt.js
+**Features**:
+- Server-side rendering for data fetching.
+- Interactive charts with SSR.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nuxt project: `npx create-nuxt-app data-dashboard`.
+   - Install Chart.js: `npm install chart.js`.
+2. **Pages**:
+   - `index.vue`: Display dashboard with multiple charts.
+3. **Data Fetching**:
+   - Use Nuxt’s `asyncData` for server-side fetching.
+4. **Charts**:
+   - Use Chart.js to create interactive charts.
+5. **Styling**:
+   - Use SCSS or TailwindCSS for design.
+6. **Testing**:
+   - Test SSR and chart rendering.
+7. **Deployment**:
+   - Deploy on Vercel.
+
+---
+
+### 4. React.js
+**Features**:
+- Modular components for each chart.
+- Fetch and display dynamic data.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a React project: `npx create-react-app data-dashboard`.
+   - Install Chart.js and React Chart.js: `npm install chart.js react-chartjs-2`.
+2. **Components**:
+   - `BarChart.js`: Display bar chart.
+   - `LineGraph.js`: Display line graph.
+   - `PieChart.js`: Display pie chart.
+3. **Data Fetching**:
+   - Fetch data from an API and pass it to the components.
+4. **Styling**:
+   - Use Styled-Components or CSS Modules.
+5. **Testing**:
+   - Test with various datasets and filters.
+6. **Deployment**:
+   - Deploy on Netlify.
+
+---
+
+### 5. Next.js
+**Features**:
+- Server-side rendering for data fetching.
+- Interactive charts with filters.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Next.js project: `npx create-next-app data-dashboard`.
+   - Install Chart.js: `npm install chart.js react-chartjs-2`.
+2. **Pages**:
+   - `index.js`: Display dashboard with multiple charts.
+3. **Data Fetching**:
+   - Use `getServerSideProps` for server-side data fetching.
+4. **Charts**:
+   - Use Chart.js and React Chart.js for rendering charts.
+5. **Styling**:
+   - Use CSS Modules or SCSS.
+6. **Testing**:
+   - Test SSR and chart interactivity.
+7. **Deployment**:
+   - Deploy on Vercel.
+
+---
+
+### 6. Node.js
+**Features**:
+- Backend API for data visualization.
+- Serve static charts to the frontend.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install dependencies: `npm install express chartjs-node`.
+2. **Backend**:
+   - Create an Express server to generate charts.
+   - Serve static charts to the frontend.
+3. **Testing**:
+   - Test API endpoints and chart generation.
+4. **Deployment**:
+   - Deploy on Heroku or Render.
+
+---
+
+### 7. Nest.js
+**Features**:
+- Modular backend for serving chart data.
+- Generate charts on the server.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nest.js project: `nest new data-dashboard`.
+   - Install dependencies: `npm install chartjs-node`.
+2. **Modules & Controllers**:
+   - Create `DataModule` for fetching and visualizing data.
+   - Serve static charts to the frontend.
+3. **Testing**:
+   - Write unit tests for data fetching and chart generation.
+4. **Deployment**:
+   - Deploy on AWS or Heroku.
