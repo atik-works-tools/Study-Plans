@@ -1,0 +1,177 @@
+## Capstone Project 4: Progressive Web App (PWA)
+
+**Objective**: Build a task management application that works offline and is installable.
+
+---
+
+### 1. JavaScript/TypeScript
+**Features**:
+- Add, edit, and delete tasks.
+- Offline functionality using Service Workers.
+- Installable on desktop and mobile devices.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install dependencies: `npm install workbox-cli` for Service Worker generation.
+2. **Frontend**:
+   - Create an HTML page with a task list and input fields for tasks.
+   - Use JavaScript (or TypeScript) for managing tasks.
+3. **Offline Support**:
+   - Register a Service Worker to cache assets and API responses.
+   - Use IndexedDB or LocalStorage to store tasks offline.
+4. **Installable PWA**:
+   - Add a `manifest.json` file with app details (name, icons, start URL).
+   - Ensure the app passes Lighthouse PWA audits.
+5. **Styling**:
+   - Use CSS for responsive design.
+6. **Testing**:
+   - Test offline functionality and installation on both desktop and mobile.
+7. **Deployment**:
+   - Deploy to Netlify or GitHub Pages.
+
+---
+
+### 2. Vue.js
+**Features**:
+- Task management with Vue components.
+- Offline support using Vue PWA plugin.
+- Installable PWA.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Vue project: `vue create task-manager`.
+   - Select the PWA preset during setup or install `@vue/cli-plugin-pwa`.
+2. **Components**:
+   - `TaskList.vue`: Display tasks.
+   - `TaskInput.vue`: Add or edit tasks.
+3. **Offline Support**:
+   - Use the Vue PWA plugin to generate Service Workers.
+   - Store tasks in Vuex or LocalStorage for offline use.
+4. **Installable PWA**:
+   - Configure `manifest.json` for app details.
+5. **Styling**:
+   - Use TailwindCSS for responsive design.
+6. **Testing**:
+   - Test offline capabilities and PWA installation.
+7. **Deployment**:
+   - Deploy to Netlify.
+
+---
+
+### 3. Nuxt.js
+**Features**:
+- Server-side rendering with offline support.
+- Installable PWA.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nuxt project: `npx create-nuxt-app task-manager`.
+   - Add the PWA module: `npm install @nuxtjs/pwa`.
+2. **Pages**:
+   - `index.vue`: Task list and input fields.
+3. **Offline Support**:
+   - Use Nuxt’s PWA module for Service Worker generation.
+   - Store tasks in Vuex or LocalStorage.
+4. **Installable PWA**:
+   - Configure `manifest.json` and icons in Nuxt.
+5. **Styling**:
+   - Use SCSS or TailwindCSS.
+6. **Testing**:
+   - Test offline capabilities and installation.
+7. **Deployment**:
+   - Deploy to Vercel.
+
+---
+
+### 4. React.js
+**Features**:
+- Task management with React components.
+- Offline support using Workbox.
+- Installable PWA.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a React project: `npx create-react-app task-manager --template cra-template-pwa`.
+   - Install Workbox: `npm install workbox-build`.
+2. **Components**:
+   - `TaskList.js`: Display tasks.
+   - `TaskInput.js`: Add or edit tasks.
+3. **Offline Support**:
+   - Use Workbox to generate a custom Service Worker.
+   - Store tasks in Context API or LocalStorage.
+4. **Installable PWA**:
+   - Add a `manifest.json` file with app details.
+5. **Styling**:
+   - Use Styled-Components or CSS Modules.
+6. **Testing**:
+   - Test offline functionality and installation.
+7. **Deployment**:
+   - Deploy to Netlify.
+
+---
+
+### 5. Next.js
+**Features**:
+- Server-side rendering with offline support.
+- Installable PWA.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Next.js project: `npx create-next-app task-manager`.
+   - Add the PWA plugin: `npm install next-pwa`.
+2. **Pages**:
+   - `index.js`: Task list and input fields.
+3. **Offline Support**:
+   - Use Next.js PWA plugin for Service Worker generation.
+   - Store tasks in Context API or LocalStorage.
+4. **Installable PWA**:
+   - Configure `manifest.json` with app details.
+5. **Styling**:
+   - Use CSS Modules or SCSS.
+6. **Testing**:
+   - Test offline functionality and installation.
+7. **Deployment**:
+   - Deploy to Vercel.
+
+---
+
+### 6. Node.js
+**Features**:
+- Backend API for task management.
+- Offline support with Service Workers.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Initialize a project: `npm init`.
+   - Install dependencies: `npm install express workbox-cli`.
+2. **Backend**:
+   - Create REST API endpoints for tasks.
+   - Use Express to serve the frontend and API.
+3. **Offline Support**:
+   - Register a Service Worker to cache API responses.
+4. **Testing**:
+   - Test API offline functionality.
+5. **Deployment**:
+   - Deploy on Heroku.
+
+---
+
+### 7. Nest.js
+**Features**:
+- Modular backend with RESTful API.
+- Offline support with Service Workers.
+
+**Step-by-Step Guide**:
+1. **Project Setup**:
+   - Create a Nest.js project: `nest new task-manager`.
+   - Install Workbox: `npm install workbox-build`.
+2. **Modules & Controllers**:
+   - Create `TaskModule` with endpoints for managing tasks.
+   - Serve the frontend using Nest.js.
+3. **Offline Support**:
+   - Use Workbox to register a Service Worker.
+4. **Testing**:
+   - Test offline capabilities and API functionality.
+5. **Deployment**:
+   - Deploy on AWS or Heroku.
